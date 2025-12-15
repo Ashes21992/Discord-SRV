@@ -1,0 +1,36 @@
+# DiscordSRV Custom Example Config
+# Replace placeholder values with your own
+
+BotToken: "MTM5ODgzNTE4NjUzMTMwNzUzMA.G-aB3d.94FCCZV2Sp8UMzRXRgK7d1hTTEQg8hjs-DAcfM"
+ChannelID:
+  global: "1449932591879819287"   # Main chat channel
+  console: "1449933715085070470"  # Console log channel
+  staff: "000000000000000000"    # Staff-only channel
+
+MinecraftToDiscord:
+  enabled: true
+  format: "**{username}**: {message}"
+
+DiscordToMinecraft:
+  enabled: true
+  format: "&7[&bDiscord&7] &f{username}: &r{message}"
+
+ConsoleChannel:
+  enabled: true
+  filterCommands: true
+
+Presence:
+  enabled: true
+  type: "PLAYING"
+  text: "on the Minecraft server!"
+
+# Logging options
+Logging:
+  chat: true
+  joins: true
+  quits: true
+  deaths: true
+
+# Advanced settings
+UpdateCheck: true
+Debug: false
